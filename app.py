@@ -1,10 +1,5 @@
-#import shutil
-#import os.path
-#import sys
 import pyomo.environ as pyo
 from model import create_model
-
-
 
 if __name__=="__main__":
 
