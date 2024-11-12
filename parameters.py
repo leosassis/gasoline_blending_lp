@@ -6,7 +6,7 @@ def df_data_to_dictionary(df: pd, flow: str, attribute: str) -> dict:
 
 def create_parameters(model: pyo.ConcreteModel, df_products: pd, df_streams: pd) -> None:
     model.P_PriceProduct = pyo.Param(model.S_Products, initialize = df_data_to_dictionary(df_products, 'products', 'price')) 
-    model.P_MinOctaneProduct = pyo.Param(model.S_Products, initialize = df_data_to_dictionary(df_products, 'products', 'octane'))    
+    model.P_MinOctaneProduct = pyo.Param(model.S_Products, initialize = df_data_to_dictionary(df_products, 'products', 'min_octane'))    
     model.P_MaxBenzeneProduct = pyo.Param(model.S_Products, initialize = df_data_to_dictionary(df_products, 'products', 'max_benzene'))    
     model.P_MaxRVPProduct = pyo.Param(model.S_Products, initialize = df_data_to_dictionary(df_products, 'products', 'RVPmax'))    
     model.P_MinRVPProduct = pyo.Param(model.S_Products, initialize = df_data_to_dictionary(df_products, 'products', 'RVPmin'))    
