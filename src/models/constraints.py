@@ -41,7 +41,7 @@ def _stream_availability(model, s: pyo.Any):
     return sum(model.V_QuantityStreamInProduct[s,p] for p in model.S_Products) <= model.P_AvailStream[s]
 
 
-def _create_constraints(model: pyo.ConcreteModel) -> None:
+def create_constraints(model: pyo.ConcreteModel) -> None:
     """ 
     Creates all necessary constraints for the optimization problem.     
     
