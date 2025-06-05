@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Optimization Result</title>
+</head>
+<body>
+    <h1>Optimization Results</h1>
+    <table border="1">
+        <tr>
+            <th>Index</th>
+            <th>Value</th>
+        </tr>
+        {% for index, value in variable_values.items() %}
+        <tr>
+            <td>{{ index }}</td>
+            <td>{{ value }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
