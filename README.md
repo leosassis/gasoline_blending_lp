@@ -9,4 +9,6 @@ Before running main.py, type in the command line the following: pip install -r r
 
 File linear_blending_model.pdf constains the mathematical model and explanations of the blending problem.
 
+In the terminal type: python main.py 
+
 Check results at http://127.0.0.1:5000/
